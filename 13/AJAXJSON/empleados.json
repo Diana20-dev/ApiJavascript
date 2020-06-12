@@ -1,0 +1,20 @@
+[
+     {
+          "id" : 1,
+          "nombre" : "Diana",
+          "empresa" : "Universidad Tecnológica de Tlaxcala",
+          "trabajo" : "Estudiante"
+     },
+     {
+          "id" : 2,
+          "nombre" : "Juan",
+          "empresa" : "UCAT",
+          "trabajo" : "Abogado"
+     },
+     {
+          "id" : 3,
+          "nombre" : "Alejandra",
+          "empresa" : "Yolotzin",
+          "trabajo" : "Docente"
+     }
+]
