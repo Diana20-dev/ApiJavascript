@@ -15,18 +15,23 @@ function cargarNombres(e) {
        
      //crear fetch
      fetch(url)
-          .then(res => res.json() )
-          .then(data => {
-               let html = `<h2>T => {op de Artistas</h2>`;
+          .then(function(res) {
+               return res.json();
+          })
+          .then(function (data) {
+               let html = `<h2>Top de Artistas</h2>`;
                html += `<ul class="lista">`;
-               data.forEach(artista => {
+               data.forEach(function (artista) {
                     html += `
                          <li><a href='${ artista.url }' target="_blank>${artista.name}</a></li>
                     `;
                })
+               html += `</ul>`;
                document.querySelector('#resultado').innerHTML = html;
           })
-          .catch(error => console.log(error) )
+          .catch(function (error) {
+               console.log(error);
+          })
 
 }
 
